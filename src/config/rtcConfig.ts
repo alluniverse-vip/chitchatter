@@ -11,7 +11,7 @@ export const rtcConfig: RTCConfiguration = {
   // CONNECTED TO THE INTERNET.
   iceServers: [
     {
-      urls: 'stun:188.148.133.173:3478',
+      urls: 'stun:stun.l.google.com:19302',
     },
     {
       urls: 'turn:188.148.133.173:3478',
