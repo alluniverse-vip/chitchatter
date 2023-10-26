@@ -56,7 +56,7 @@
     "start:streamsaver": "serve -p 3015 node_modules/streamsaver",
     "dev": "mprocs \"npx cross-env REACT_APP_TRACKER_URL=\"ws://localhost:8000\" REACT_APP_STREAMSAVER_URL=\"http://localhost:3015/mitm.html\" npm run start\" \"npm run start:tracker\" \"npm run start:streamsaver\"",
     "build": "cross-env REACT_APP_HOMEPAGE=$(npm pkg get homepage) react-scripts build",
-    "build:netlify": "PUBLIC_URL=https://alluniverse-chitchatter.netlify.app/ cross-env REACT_APP_HOMEPAGE=$(npm pkg get homepage) react-scripts build",
+    "build:cloudflare": "PUBLIC_URL=https://chitchatter.pages.dev/ react-scripts build",
     "test": "react-scripts test",
     "prepare": "husky install",
     "prettier": "prettier 'src/**/*.js' --write",
